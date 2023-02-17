@@ -184,6 +184,24 @@ inicio
 fin
 ```
 
+<details><summary>Tips para pseudocódigo</summary><p>
+<p align="justify">
+La fácil, <a href="https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo">aquí</a>se puede encontrar una buena explicación del pseudocode.
+</p>
+
+ Si quieren poner las cajas en pseudocódigo en markdown sería:
+ <div class="box">
+	<pre>
+		<code>
+			```pseudocode
+				instrucciones
+			```
+		</code>
+	</pre>
+</div>
+
+</p></details><br>
+
 ### Diagrama de flujo
 Un diagrama de flujo es una herramienta gráfica utilizada para representar visualmente el flujo de un proceso o sistema. Consiste en una serie de símbolos estándar que representan diferentes tipos de acciones o procesos, conectados por flechas que muestran la dirección del flujo.
 
@@ -229,8 +247,8 @@ flowchart TD;
     H[i=i+1] --> I{i menor a n?};
     G --> H;
     F --> H;
-    I -- Sí --> J(Fin);
-    I -- No --> E;
+    I -- No --> J(Fin);
+    I -- Sí --> E;
 ```
 <details><summary>Tips para los diagramas de flujo</summary><p>
 <p align="justify">
