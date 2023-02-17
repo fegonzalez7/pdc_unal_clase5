@@ -173,6 +173,28 @@ flowchart TD;
     I -- Sí --> J(Fin);
     I -- No --> E;
 ```
+<details><summary>Tips para los diagramas de flujo</summary><p>
+<p align="justify">
+Pueden utilizar <a href="https://app.diagrams.net">draw.io</a>, en general es bastante completo y se puede conectar con drive.
+</p>
+
+<div align='center'>
+<figure> <img src="https://i.postimg.cc/Y9rhQkcP/image.png" alt="" width="400" height="auto"/></br>
+<figcaption><b></b></figcaption></figure>
+</div>
+
+
+<p align="justify">
+Pero si quieren algo pro, <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams">aquí</a> encuentran la manera de hacer diagramas con code usando <a href="https://mermaid.js.org/syntax/flowchart.html">mermaid</a> (como los verdaderos pros, no como noobs arrastrando bolitas y palitos).
+<a href="https://mermaid.live/">Editor </a>en línea de mermaid.
+</p>
+
+<div align='center'>
+<figure> <img src="https://i.postimg.cc/Gp7HPVch/image.png" alt="" width="400" height="auto"/></br>
+<figcaption><b></b></figcaption></figure>
+</div>
+</p></details><br>
+
 
 ---------------
 ## Manejo inicial de repos en github
