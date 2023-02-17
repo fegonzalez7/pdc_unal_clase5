@@ -129,10 +129,18 @@ Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el sigu
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    A[Inicio] --> B[número n];
+    B --> C;
+    C[Lista de 2 hasta n-1] --> D[i=2];
+    D --> E;
+    E{residuo de n/i es cero} -- Sí --> F[i es divisor];
+    E -- No --> G[i no es divisor];
+    H[i=i+1] --> I{i menor a n};
+    G --> H;
+    F --> H;
+    I -- Sí --> J[Fin];
+    I -- No --> E;
+
 ```
 
 ---------------
