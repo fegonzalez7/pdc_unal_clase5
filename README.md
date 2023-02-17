@@ -126,21 +126,52 @@ Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el sigu
 
 
 ### Diagrama de flujo
+Un diagrama de flujo es una herramienta gráfica utilizada para representar visualmente el flujo de un proceso o sistema. Consiste en una serie de símbolos estándar que representan diferentes tipos de acciones o procesos, conectados por flechas que muestran la dirección del flujo.
+
+Permiten visualizar el proceso de una manera clara y concisa, lo que facilita la comprensión y la comunicación de los conceptos.
+
+En general se tienen 4 componentes:
+
+**Caja circular:** Representa el inicio o fin de la secuencia.
+```mermaid
+flowchart TD;
+    A(Inicio Fin)
+```
+
+**Caja cuadrada:** Representa una operación o proceso.
+```mermaid
+flowchart TD;
+    A[Proceso]
+```
+
+**Condicional:** Representa una disyuntuva/pregunta.
+```mermaid
+flowchart TD;
+    A{Condicional} -- Sí --> B[En caso positivo]
+    A -- No --> C[En caso negativo]
+```
+
+**Flechas:** Indican el flujo del proceso.
+```mermaid
+flowchart TD;
+    A --> B
+```
+
+Un ejemplo del algoritmo no tan pro para obtener la lista de los divisores de un número n natural dado.
 
 ```mermaid
-graph TD;
-    A[Inicio] --> B[número n];
+flowchart TD;
+    A(Inicio) --> B[número n];
     B --> C;
     C[Lista de 2 hasta n-1] --> D[i=2];
     D --> E;
-    E{residuo de n/i es cero} -- Sí --> F[i es divisor];
+    E{residuo de n/i es cero?} -- Sí --> F[i es divisor];
     E -- No --> G[i no es divisor];
-    H[i=i+1] --> I{i menor a n};
+    H[i=i+1] --> I{i menor a n?};
     G --> H;
     F --> H;
-    I -- Sí --> J[Fin];
+    I -- Sí --> J(Fin);
     I -- No --> E;
-
 ```
 
 ---------------
