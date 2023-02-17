@@ -123,7 +123,66 @@ Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el sigu
 </div>
 
 ### Pseudocódigo
+Un pseudocódigo es un lenguaje de programación informal que utiliza un conjunto de instrucciones sencillas para describir el flujo de un algoritmo. A diferencia de un lenguaje de programación formal, el pseudocódigo no tiene una sintaxis estricta y no se compila o se ejecuta directamente en una computadora. En cambio, se utiliza como una herramienta de comunicación entre el programador y otros miembros del equipo de desarrollo, o como una forma de planificar y diseñar un programa antes de escribir el código real.
 
+El pseudocódigo se escribe en un lenguaje natural simple y utiliza una serie de convenciones de formato para denotar diferentes tipos de instrucciones, como asignaciones de variables, bucles y condicionales. El objetivo es que sea fácil de leer y entender por los programadores y otros colaboradores, y que sirva como una especie de borrador o esquema para el código real que se escribirá después.
+
+
+Declaración de datos:
+```pseudocode
+n : entero
+i : entero
+```
+
+Instrucciones:
+```pseudocode
+i := 2
+```
+
+Condicional:
+```pseudocode
+Si modulo(n,i) == 0 entonces
+  escribir("i es divisor de n")
+sino
+  escribir("i no es divisor de n")
+```
+
+Iteraciones:
+```pseudocode
+Mientras (i < n) hacer
+  instrucciones;
+Fin mientras
+
+Para (i=2 hasta n-1 con paso 1) hacer
+  instrucciones
+Fin para
+```
+
+En general un algoritmo en pseudocódigo se organiza de este modo:
+```pseudocode
+[datos variables]
+inicio
+  instrucciones
+fin
+```
+
+El ejemplo de los divisores para un número n natural con el método no tan pro:
+
+```pseudocode
+[variables]
+n : entero
+i : entero
+inicio
+  i := 2
+  Mientras (i < n) hacer
+    Si modulo(n,i) == 0 entonces
+      escribir("i es divisor de n")
+    sino
+      escribir("i no es divisor de n")
+    i := i + 1
+  Fin mientras
+fin
+```
 
 ### Diagrama de flujo
 Un diagrama de flujo es una herramienta gráfica utilizada para representar visualmente el flujo de un proceso o sistema. Consiste en una serie de símbolos estándar que representan diferentes tipos de acciones o procesos, conectados por flechas que muestran la dirección del flujo.
