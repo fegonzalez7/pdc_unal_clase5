@@ -127,6 +127,17 @@ Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el sigu
 
 ### Diagrama de flujo
 
+```flow
+st=>start: Login
+op=>operation: Login operation
+cond=>condition: Successful Yes or No?
+e=>end: To admin
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
 ---------------
 ## Manejo inicial de repos en github
 
@@ -142,7 +153,7 @@ Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el sigu
 
 2. Revise el procedimiento matemático para hallar raices cuadradas (son divisiones y restas), plantee el algoritmo en pseudocódigo y en diagrama de flujo.
 
-3. Cree un reporsitorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_4*.
+3. Cree un repositorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_4*.
 
 
 
