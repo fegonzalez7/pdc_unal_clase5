@@ -186,19 +186,17 @@ fin
 
 <details><summary>Tips para pseudocódigo</summary><p>
 <p align="justify">
-La fácil, <a href="https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo">aquí</a>se puede encontrar una buena explicación del pseudocode.
+La fácil, <a href="https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo">aquí</a> se puede encontrar una buena explicación del pseudocode.
 </p>
 
  Si quieren poner las cajas en pseudocódigo en markdown sería:
- <div class="box">
-	<pre>
-		<code>
-			```pseudocode
-				instrucciones
-			```
-		</code>
-	</pre>
-</div>
+
+<pre><code>
+```pseudocode
+  instrucciones
+```</code></pre>
+
+O en HTML pueden revisar este <a href="https://stackoverflow.com/questions/2820453/how-to-display-raw-html-code-on-an-html-page">enlace</a>.
 
 </p></details><br>
 
