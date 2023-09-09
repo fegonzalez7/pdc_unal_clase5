@@ -49,7 +49,7 @@ Componentes del lenguaje:
 		<th><b>Definición</b></th>
 	</tr>
 	<tr bgcolor="#e4e4ed">
-		<td style="color:#141414">Para ordenarle a una máquina de computo (computador) que ejecute cierto procedimiento o realice un cálculo predeterminado, se dispone de los lenguajes de programación, los cuales son definidos a partir del lenguaje matemático, por eso los computadores hacen exactamente lo que se les dice, no lo que se quiere que hagan. De esta manera, en programación se tiene un lenguaje bien definido donde los significados de las frases son ´unicos (no ambiguos). Esto exige que el programador exprese de forma precisa lo que desea hacer.</td>
+		<td style="color:#141414">Para ordenarle a una máquina de computo (computador) que ejecute cierto procedimiento o realice un cálculo predeterminado, se dispone de los lenguajes de programación, los cuales son definidos a partir del lenguaje matemático, por eso los computadores hacen exactamente lo que se les dice, no lo que se quiere que hagan. De esta manera, en programación se tiene un lenguaje bien definido donde los significados de las frases son únicos (no ambiguos). Esto exige que el programador exprese de forma precisa lo que desea hacer.</td>
 	</tr>
 </table>
 
@@ -281,12 +281,12 @@ Pero si quieren algo pro, <a href="https://docs.github.com/en/get-started/writin
 
 
 ---------------
-## Reto no. 4
+## Reto no. 3
 1. Plantear el algoritmo para obtener los números primos hasta n, usando pseudocódigo y diagramas de flujo.
 
-2. Revise el procedimiento matemático para hallar raices cuadradas (son divisiones y restas), plantee el algoritmo en pseudocódigo y en diagrama de flujo.
+2. Revise el procedimiento matemático para hallar raíces cuadradas (son divisiones y restas), plantee el algoritmo en pseudocódigo y en diagrama de flujo.
 
-3. Cree un repositorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_4*.
+3. Cree un repositorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_3*.
 
 
 
