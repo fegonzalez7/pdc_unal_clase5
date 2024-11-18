@@ -1,6 +1,27 @@
 # Programación de Computadores - UNAL
 ## Lenguajes
 
+## Tabla de Contenidos
+- [Comunicación](#comunicación)
+  - [Elementos de la comunicación](#elementos-de-la-comunicación)
+- [Lenguaje](#lenguaje)
+  - [Componentes del lenguaje](#componentes-del-lenguaje)
+  - [Lenguaje de programación](#lenguaje-de-programación)
+  - [Paradigmas de programación de alto nivel](#paradigmas-de-programación-de-alto-nivel)
+- [Algoritmos y lenguajes](#algoritmos-y-lenguajes)
+  - [Clasificación](#clasificación)
+- [Programación estructurada](#programación-estructurada)
+  - [Teorema de la estructura](#teorema-de-la-estructura)
+    - [Secuencia](#secuencia)
+    - [Selección](#selección)
+    - [Iteración](#iteración)
+  - [Pseudocódigo](#pseudocódigo)
+  - [Diagrama de flujo](#diagrama-de-flujo)
+- [Manejo inicial de repos en github](#manejo-inicial-de-repos-en-github)
+- [Notebooks de Jupyter](#notebooks-de-jupyter)
+- [Reto no. 3](#reto-no-3)
+
+
 ## Comunicación
 <table cellspacing="1" bgcolor="">
 	<tr bgcolor="#252582">
@@ -40,8 +61,8 @@ cambiar el mensaje.
 
 Componentes del lenguaje:
  + **Léxico:** El léxico de un lenguaje lo conforman las unidades mínimas con significado completo. A cada uno de estas unidades mínimas con significado se le conoce como lexema.
- + **Sintaxis:** La sintaxis de un lenguaje explica la forma en que se pueden construir frases en el lenguaje a partir del léxico. Usualmente la sintaxis se presenta como una colección de reglas de reescritura que se definen con una gramática. Estas son reglas que indican como unos símbolos de la ´ gramática pueden ser reescritos por otros símbolos de la gramática o por lexemas. La idea es que al final del proceso de reescritura sólo se tengan lexemas.
- + **Semántica:** La semántica de un lenguaje define la forma en que se le asocia significado (sentido) a las frases construidas mediante la gramática. En castellano la semántica no es fácil de definir ya que intervienen elementos muy elaborados que han sido construidos de manera natural a través del tiempo (cada objeto/idea conocido(a) por el ser humano esta asociado(a) con una palabra).
+ + **Sintaxis:** La sintaxis de un lenguaje explica la forma en que se pueden construir frases en el lenguaje a partir del léxico. Usualmente la sintaxis se presenta como una colección de reglas de reescritura que se definen con una gramática. 
+ + **Semántica:** La semántica de un lenguaje define la forma en que se le asocia significado (sentido) a las frases construidas mediante la gramática.
 
 ### Lenguaje de programación
 <table cellspacing="1" bgcolor="">
@@ -54,18 +75,13 @@ Componentes del lenguaje:
 </table>
 
 ### Paradigmas de programación de alto nivel
-Los programas fuente escritos en lenguajes de alto nivel se compilan y a
-partir de estos se generara un programa objeto de código de máquina. El
-lenguaje de programación C entra en la clase de lenguajes compilados.
+Los programas fuente escritos en lenguajes de alto nivel se compilan y a partir de estos, se genera un programa de código de máquina.
 <div align='center'>
 <figure> <img src="https://i.postimg.cc/VLPCv9S5/image.png" alt="" width="600" height="auto"/></br>
 <figcaption><b>Programas compilados</b></figcaption></figure>
 </div>
 
-Otra forma de tratar los programas fuente es utilizando interpretes, en
-estos se toma instrucción por instrucción, estas se traducen a un código
-intermedio (Bytecode) similar al Ensamblador y de hay se traducen a
-código de máquina, usualmente utilizando un programa que depende de la
+Otra forma de tratar los programas fuente es utilizando interpretes, en estos se toma instrucción por instrucción, estas se traducen a un código intermedio (Bytecode) similar al Ensamblador y de hay se traducen a código de máquina, usualmente utilizando un programa que depende de la
 plataforma y que se suele denominar La maquina virtual.
 <div align='center'>
 <figure> <img src="https://i.postimg.cc/HLrxBjJf/image.png" alt="" width="600" height="auto"/></br>
@@ -78,13 +94,25 @@ Los lenguajes de muy alto nivel son fáciles de leer, comprender y programar, no
 ### Clasificación
 Existen muchos lenguajes de programación de alto nivel con sus diferentes versiones. Por esta razón, es difícil su tipificación, pero una clasificación muy extendida desde el punto de vista de su estilo, forma de codificación y la filosofía de su creación es la siguiente:
 
- + **Lenguajes de programación imperativos:** Describe la programación en términos del estado de la memoria del programa y sentencias que cambian dicho estado. Los programas imperativos son un conjunto de instrucciones que se ejecutan secuencialmente y que le indican al computador cómo realizar una tarea. La implementación de hardware de la mayoría de computadores es imperativa ya que el hardware está dise~nado para ejecutar código de máquina el cual es imperativo. Ejemplos: Ensamblador, Cobol, Pascal, Fortran, BASIC, C, Perl, Ada, MathLab, SciLab, Python, Java Script.
- + **Lenguajes de programación estructurados o procedurales:** En un lenguaje estructurado un programa se descompone en procedimientos individuales (funciones) que realizan una tarea específica, para resolver un problema en conjunto. Ejemplos: Pascal, C++, Visual Basic, Python, Java, MathLab, SciLab.
- + **Lenguajes de programación orientados a objetos:** En la Programación Orientada a Objetos se organiza el código en unidades denominadas clases, de las cuales los objetos son instancias de éstas, que al relacionarse e interaccionar entre sí, permiten resolver los retos planteados. La Programación Orientada a Objetos trabaja de esta manera: todo el programa está construido con base a diferentes componentes (objetos), cada uno tiene un rol específico en el programa y todos los componentes pueden comunicarse entre ellos de forma predefinida. Para la construcción de las clases se utilizan técnicas tales como: abstracción, herencia, modularidad, polimorfismo, encapsulamiento y ocultamiento. Ejemplos: Smalltalk, C++, Java, Python, R.
- + **Lenguajes de programación declarativos:** Basado en la utilización de predicados lógicos (lógicos) o funciones matemáticas (funcionales), su objetivo es conseguir lenguajes expresivos en los que no sea necesario especificar cómo resolver el problema (programación convencional imperativa), sino qué problema se desea resolver. Los interpretes de los lenguajes declarativos tienen incorporado un motor de inferencia genérico que resuelve los problemas a partir de su especificación. Ejemplos: Lisp, ML, Haskell, Maude, Prolog, SQL.
++ **Lenguajes de programación imperativos:** Son aquellos que describen la programación como una secuencia de comandos que modifican el estado de la memoria del programa. En estos lenguajes, los programas consisten en una serie de instrucciones que le indican al computador exactamente cómo realizar una tarea paso a paso. Su popularidad se debe a que la mayoría del hardware está diseñado para ejecutar instrucciones de manera secuencial, lo que los hace muy eficientes. Algunos ejemplos incluyen: Ensamblador, COBOL, Pascal, Fortran, BASIC, C, Perl, Ada, MATLAB, Scilab, Python y JavaScript.
+
++ **Lenguajes de programación estructurados o procedurales:** Representan una evolución de los lenguajes imperativos donde los programas se organizan en procedimientos o funciones independientes. Cada función realiza una tarea específica y, al trabajar en conjunto, resuelven problemas más complejos. Este enfoque mejora la legibilidad y mantenimiento del código. Ejemplos notables son: Pascal, C++, Visual Basic, Python, Java y MATLAB.
+
++ **Lenguajes de programación orientados a objetos:** Este paradigma organiza el código en unidades llamadas clases, que actúan como plantillas para crear objetos. Los objetos son instancias de estas clases que contienen datos y código, y pueden interactuar entre sí para resolver problemas. Este enfoque se basa en conceptos fundamentales como:
+  - Abstracción: Simplificación de problemas complejos
+  - Encapsulamiento: Protección de datos y métodos
+  - Herencia: Reutilización y extensión de código
+  - Polimorfismo: Flexibilidad en el comportamiento de objetos
+  - Modularidad: Organización del código en componentes independientes
+Algunos lenguajes que implementan este paradigma son: Smalltalk, C++, Java, Python y R.
+
++ **Lenguajes de programación declarativos:** Estos lenguajes se enfocan en describir qué problema se desea resolver, en lugar de especificar cómo resolverlo. Utilizan dos enfoques principales:
+  - Lógico: Basado en predicados y reglas de lógica
+  - Funcional: Basado en funciones matemáticas y evaluación de expresiones
+Su característica distintiva es que incluyen motores de inferencia que determinan automáticamente cómo resolver el problema a partir de la especificación dada. Ejemplos representativos incluyen: Lisp, ML, Haskell, Maude, Prolog y SQL.
 
 ## Programación estructurada
-La programación estructurada es un estilo de programación de los años sesentas en el cual, la estructura de un algoritmo se hace tan clara como sea posible utilizando tres formas de organizar sus instrucciones:
+La programación estructurada es un estilo de programación de los años sesentas, en el cual, la estructura de un algoritmo se hace tan clara como sea posible utilizando tres formas de organizar sus instrucciones (veáse siguiente sección).
 
 Estos tres tipos de estructuras de control pueden combinarse para producir programas de computador tan complejos y largos como se quiera.
 
@@ -114,8 +142,7 @@ Permite escoger entre dos grupos de instrucciones, de acuerdo a la evaluación d
 </div>
 
 #### Iteración
-Esta forma de control permite repetir varias veces una instrucción o conjunto de
-instrucciones hasta cuando deje de cumplirse una condición (predicado lógico).
+Esta forma de control permite repetir varias veces una instrucción o conjunto de instrucciones hasta cuando deje de cumplirse una condición (predicado lógico).
 Se conoce como la estructura **HACER – MIENTRAS / REPETIR - PARA**. En el siguiente diagrama, **P** representa un predicado y A representa un grupo de instrucciones. Debe ser claro que siempre que **P** sea verdadero, se realiza el conjunto de instrucciones **A**; de lo contrario se termina la iteración. Las flechas horizontales de más a la izquierda y de más a la derecha representan los puntos de entrada y salida, respectivamente.
 <div align='center'>
 <figure> <img src="https://i.postimg.cc/nrjgWbKV/image.png" alt="" width="500" height="auto"/></br>
@@ -274,19 +301,20 @@ Pero si quieren algo pro, <a href="https://docs.github.com/en/get-started/writin
 ---------------
 ## Manejo inicial de repos en github
 
+- [Guía de inicio en Github](https://medium.com/swlh/a-beginners-guide-to-github-e4747a93765c)
+- [Otra guía de inicio](https://medium.com/@Coursesteach/github-part-1-introduction-74717a76d419)
+
 
 ---------------
 ## Notebooks de Jupyter
-
-
+- [The Ultimate Beginner’s Guide to Jupyter Notebooks](https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af)
+- [Notebook by Jupyter](https://docs.jupyter.org/en/latest/)
 
 ---------------
 ## Reto no. 3
 1. Plantear el algoritmo para obtener los números primos hasta n, usando pseudocódigo y diagramas de flujo.
 
-2. Revise el procedimiento matemático para hallar raíces cuadradas (son divisiones y restas), plantee el algoritmo en pseudocódigo y en diagrama de flujo.
-
-3. Cree un repositorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_3*.
+2. Cree un repositorio en github en donde muestre el desarrollo de la actividad y comparta el enlace por el canal de slack *reto_3*.
 
 
 
